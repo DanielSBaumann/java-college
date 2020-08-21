@@ -1,0 +1,104 @@
+@media screen and (max-width: 600px) {
+    /*DISPLAY MOBILE*/
+    section{
+        background-color: lightblue;
+    }
+}
+@media screen and (min-width: 601px) {
+/*DISPLAY DESKTOP*/
+    .form-main{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 80% 20%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:"left right"
+                            "bottom bottom";
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 12px;
+        transition: all linear 0.5s;
+    }
+    .form-main-left{
+        grid-area:left;
+    }
+    .form-main-right{
+        grid-area:right;
+    }
+    .form-main-bottom{
+        grid-area:bottom;
+        margin: 8px auto;
+    }
+    .form-main select,.form-main input[type="date"]{
+        margin: 20px 6px;
+        border: 1px solid #ccc;
+        background-color: rgb(230, 227, 227);
+        color: rgb(148, 143, 143);
+        border-radius: 8px;
+        text-align: center;
+        width: 60%;
+        height: 26px;
+    }
+    .form-main label{
+        margin: 40px 6px 20px 10px;
+    }
+    .form-main-left fieldset,.form-main-right fieldset{
+        margin: 20px auto;
+        width: 90%;
+        height: 80%;
+        border: solid 1px #ccc;
+        border-radius: 12px;
+    }
+    .input-txt{
+        border: 1px solid #ccc;
+        background-color: rgb(230, 227, 227);
+        color: rgb(148, 143, 143);
+        border-radius: 8px;
+        text-align: center;
+        width: 76%;
+        height: 26px;
+        margin: 20px 2px;
+        transition: all linear 0.4s;
+    }
+    .input-txt:hover{
+        background-color: rgb(250, 243, 243);
+        border: 1px solid rgb(145, 140, 140);
+    }
+    .input-txt:focus{
+        border: 2px solid rgb(126, 124, 124);
+        background-color: rgb(250, 246, 246);
+        color: black;
+    }
+    .btn-cad{
+        background-color: rgb(31, 44, 70);
+        font-size: 18px;
+        border: 2px solid transparent;
+        border-radius: 12px;
+        color: white;
+        width: 120px;
+        height: 40px;
+        transition: all linear 0.3s;
+        box-shadow: 3px 3px 5px rgb(167, 156, 156);
+    }
+    .btn-cad:hover{
+        color: rgb(31, 44, 70);
+        background-color: white;
+        border: 2px solid rgb(31, 44, 70);
+    }
+    .btn-reset{
+        background-color: rgb(167, 156, 156);
+        font-size: 18px;
+        border: 2px solid transparent;
+        border-radius: 12px;
+        color: white;
+        width: 120px;
+        height: 40px;
+        transition: all linear 0.3s;
+        box-shadow: 3px 3px 5px rgb(170, 165, 165);
+    }
+    .btn-reset:hover{
+        color: rgb(167, 156, 156);
+        background-color: white;
+        border: 2px solid rgb(167, 156, 156);
+    }
+}
