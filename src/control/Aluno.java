@@ -29,12 +29,11 @@ public class Aluno extends Pessoa {
 	// @ForeignKey(name = "fk_Aluno_Avaliacao"))
 	protected List<Avaliacao> avaliacao;
 
-	public boolean cadastrar(String nome, String cpf, String email, String login, String senha, String matricula) {
+	public boolean cadastrar(String nome, String cpf, String email, String login, String senha) {
 
 		this.nome = nome;
 		this.cpf = cpf;
 		this.email = email;
-		this.matricula = matricula;
 		this.login = login;
 		this.senha = senha;
 

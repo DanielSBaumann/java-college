@@ -36,7 +36,7 @@ public class ServLogin extends HttpServlet {
 				HttpSession session = request.getSession();
 				session.setAttribute("user", list.get(0).getLogin());
 				session.setAttribute("id", list.get(0).getId());
-				request.getRequestDispatcher("index.jsp").forward(request, response);
+				request.getRequestDispatcher("admin.jsp").forward(request, response);
 				break;
 			}
 			case "aluno": {

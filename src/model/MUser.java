@@ -13,7 +13,7 @@ public class MUser {
 
 		try {
 
-			System.out.println("Model Aluno -> Cadastrar");
+			System.out.println("Model User -> Cadastrar");
 
 			session = HibernateUtil.abrirSession();
 

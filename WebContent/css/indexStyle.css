@@ -7,7 +7,7 @@
       body{
           font-family: sans-serif;
           display: grid;
-          grid-template-rows: 30vh 120vh auto 10vh;
+          grid-template-rows: 30vh auto auto 10vh;
           grid-template-columns: 1fr;
           grid-template-areas:"hd"
                                 "nv"
@@ -142,6 +142,7 @@
     height: 0;
     overflow: hidden;
     transition: height .5s;
+    transition: all 0.3s linear;
 }
 .topic:hover{
     color: rgb(189, 179, 179);
@@ -164,26 +165,12 @@
     text-transform: uppercase;
     list-style-type: none;
     margin: 8px;
+    transition: all 0.3s linear;
 }
 .link:hover{
     color: rgb(124, 77, 77);
     background-color: rgb(31, 44, 70);
 }
-/*
-.btn-nav{
-  display: block;
-  color: white;
-  background-color: rgb(25, 35, 53);
-  width: 100%;
-  height: 10%;
-  letter-spacing: 2px;
-  font-size: 12px;
-  text-transform: uppercase;
-  border: none;
-  border-bottom:solid 1px white;
-  transition: background-color 0.3s linear;
-}
-*/
 .btn-nav:hover{
   color: rgb(189, 179, 179);
   background-color: rgb(61, 73, 97);
@@ -314,7 +301,6 @@
         box-shadow: 3px 3px 5px rgb(41, 39, 39);
     }
     .box-nav ul{
-        /*text-align: center;*/
         margin: 0;
         padding: 0;
     }
@@ -377,30 +363,6 @@
         color: rgb(124, 77, 77);
         background-color: rgb(31, 44, 70);
     }
-    /*
-    ###################old #########
-    .btn-nav{
-        display: block;
-        color: white;
-        background-color: rgb(25, 35, 53);
-        width: 100%;
-        height: 10%;
-        letter-spacing: 2px;
-        font-size: 12px;
-        text-transform: uppercase;
-        border: none;
-        border-bottom:solid 1px white;
-        transition: background-color 0.3s linear;
-    }
-    .btn-nav:hover{
-        color: rgb(189, 179, 179);
-        background-color: rgb(61, 73, 97);
-    }
-    .btn-nav:active{
-        color: rgb(133, 127, 127);
-        background-color: rgb(32, 34, 37);
-    }
-    */
     section{
           grid-area: sc;
           background-color: white
