@@ -56,7 +56,7 @@ public class MAluno {
 
 	}
 
-	public List<Aluno> user(int id) {
+	public List<Aluno> user(long id) {
 
 		Session session;
 

@@ -23,6 +23,9 @@
           grid-template-areas:"gf gf"
                               "lg se";
       }
+      i{
+          font-size: inherit;
+      }
       #hd-logo{
         grid-area: lg;
         background-color: rgb(31, 44, 70);
@@ -219,6 +222,9 @@
           grid-template-rows: 1fr;
           grid-template-areas:"lg se gf";
       }
+      li{
+      font-size: inherit;
+    }
       #hd-logo{
           grid-area: lg;
           background-color: rgb(31, 44, 70);

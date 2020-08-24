@@ -52,7 +52,7 @@ public class Aluno extends Pessoa {
 
 	}
 
-	public Aluno user(int id) {
+	public Aluno user(long id) {
 		return (Aluno) new MAluno().user(id).get(0);
 	}
 

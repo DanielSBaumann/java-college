@@ -11,8 +11,8 @@
     <link rel="stylesheet" type="text/css" href="css/indexStyle.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/cadastro.css" media="screen" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="js/admin.js"></script>
-    <title>Colégio SB</title>
+    <script src="js/aluno.js"></script>
+    <title>Colegio SB</title>
 </head>
 
 <body>
@@ -25,9 +25,7 @@
 
             <!--FORM-->
             <form id="form-main">
-
                 <input type="hidden" id="action" name="action">
-
                 <!--FORM-->
 
         </div>
@@ -38,9 +36,10 @@
             </div>
         </div>
         <div id="hd-gif">
-            <p><i class="fa fa-home"></i>Home |</p>
-            <p><i class="fa fa-user-edit"></i>Meu Perfil |</p>
-            <p>Sair</p>
+            <p><i onclick="home()" class="fa fa-home">Home |</i></p>
+            <p><i onclick="profile()" class="fa fa-user-edit">Meu Perfil |</i></p>
+            <p><i onclick="" class="fa fa-book">Inf. Academicas |</i></p>
+            <p onclick="">Sair</p>
         </div>
     </header>
 
@@ -50,7 +49,7 @@
 
             <ul>
                 <li class="topic">
-                    Admin
+                    Academico
                     <ul>
                         <li class="link"><a href="#">ABC</a></li>
                         <li class="link"><a href="#">DEF</a></li>
@@ -58,7 +57,7 @@
                     </ul>
                 </li>
                 <li class="topic">
-                    Administrativo
+                    Materiais
                     <ul>
                         <li class="link"><a href="#">ABC</a></li>
                         <li class="link"><a href="#">DEF</a></li>
@@ -66,7 +65,7 @@
                     </ul>
                 </li>
                 <li class="topic">
-                    Funcionarios
+                    Grade escolar
                     <ul>
                         <li class="link"><a href="#">ABC</a></li>
                         <li class="link"><a href="#">DEF</a></li>
@@ -82,7 +81,7 @@
                     </ul>
                 </li>
                 <li class="topic">
-                    Professor
+                    Financeiro
                     <ul>
                         <li class="link"><a href="#">ABC</a></li>
                         <li class="link"><a href="#">DEF</a></li>
@@ -91,21 +90,6 @@
                         <li class="link"><a href="#">GHI</a></li>
                     </ul>
                 </li>
-                <li class="topic">
-                    Aluno
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Responsavel
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
                 </li>
             </ul>
 
@@ -114,6 +98,14 @@
     </nav>
 
     <section>
+
+        <%
+
+        User user = new User().user(Long.parseLong(session.getAttribute("id").toString()));
+
+        Aluno aluno = new Aluno().user(user.getId_table());
+
+        %>
 
         <div class="form-main">
 
@@ -124,8 +116,12 @@
                     <legend>Cadastro de Usuario</legend>
 
                     <label for="tipo">Categoria do Usuario</label>
-                    <select name="tipo" id="tipo">
-                        <option value="0">Selecione...</option>
+                    <!--
+                    <input class="input-txt" type="text" value='<%= user.getTipo()%>' disabled>
+                    -->
+                    
+                    <select name="tipo" id="tipo" disabled>
+                        <option value="0"><%= user.getTipo()%></option>
                         <option value="1">Administrador</option>
                         <option value="2">Administrativo</option>
                         <option value="3">Funcionario</option>
@@ -137,18 +133,17 @@
                     <br>
 
                     <label for="nome">Nome</label>
-                    <input class="input-txt" type="text" id="nome" name="nome" placeholder="digite nome" required>
+                    <input class="input-txt" type="text" id="nome" name="nome" value='<%= aluno.getNome()%>'>
 
                     <br>
 
                     <label for="login">Login</label>
-                    <input class="input-txt" type="text" id="login" name="login" placeholder="digite login" required>
+                    <input class="input-txt" type="text" id="login" name="login" value='<%= aluno.getLogin()%>'>
 
                     <br>
 
                     <label for="senha">Senha</label>
-                    <input class="input-txt" type="password" id="senha" name="senha" placeholder="digite senha"
-                        required>
+                    <input class="input-txt" type="password" id="senha" name="senha" value='<%= aluno.getSenha()%>'>
 
                 </fieldset>
 
@@ -161,23 +156,22 @@
                     <legend>Dados Pessoais</legend>
 
                     <label for="cpf">Cpf</label>
-                    <input class="input-txt" type="text" id="cpf" name="cpf" placeholder="digite cpf" required>
+                    <input class="input-txt" type="text" id="cpf" name="cpf" value='<%= aluno.getCpf()%>'>
 
                     <br>
 
                     <label for="tel">Telefone</label>
-                    <input class="input-txt" type="text" id="tel" name="tel" placeholder="(21)99999-9999" required>
+                    <input class="input-txt" type="text" id="tel" name="tel" value='99999999'>
 
                     <br>
 
                     <label for="endereco">Endereco</label>
                     <input class="input-txt" type="text" id="endereco" name="endereco"
-                        placeholder="Ex:Av. das Americas 5000" required>
+                        value='<%= aluno.getEndereco()%>'>
 
                     <br>
                     <label for="email">Email</label>
-                    <input class="input-txt" type="email" id="email" name="email" placeholder="Ex:joao@mail.com"
-                        required>
+                    <input class="input-txt" type="email" id="email" name="email" value='<%= aluno.getEmail()%>'>
 
                     <br>
 
@@ -190,9 +184,11 @@
 
             <div class="form-main-bottom">
 
-                <input onclick="cadastrar()" class="btn-cad" type="button" value="cadastrar">
+                <input onclick="update()" class="btn-cad" type="button" value="update">
 
+                <!--
                 <input class="btn-reset" type="reset" value="clear">
+                -->
 
             </div>
 
