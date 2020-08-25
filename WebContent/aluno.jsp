@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/indexStyle.css" media="screen" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="js/aluno.js"></script>
+
     <title>Colégio SB</title>
 </head>
 
@@ -101,6 +102,30 @@
 
         <!-- Carrousel-->
 
+        <div class="carousel-item">
+            <img src="img/student1.jpg" alt="img1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Imagem 1</h5>
+                <p>texto 1</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="img/student2.jpg" alt="img2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Imagem 2</h5>
+                <p>texto 2</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="img/student3.jpg" alt="img3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Imagem 3</h5>
+                <p>texto 3</p>
+            </div>
+        </div>
+
         <!-- Carrousel-->
 
     </section>
@@ -116,6 +141,7 @@
         </form>
         <!--FORM-->
     </footer>
+
 </body>
 
 </html>

@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/cadastro.css" media="screen" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="js/admin.js"></script>
+
     <title>Colégio SB</title>
 </head>
 
@@ -211,6 +212,7 @@
         </form>
         <!--FORM-->
     </footer>
+
 </body>
 
 </html>

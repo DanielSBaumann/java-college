@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/cadastro.css" media="screen" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="js/aluno.js"></script>
+
     <title>Colegio SB</title>
 </head>
 
@@ -119,7 +120,7 @@
                     <!--
                     <input class="input-txt" type="text" value='<%= user.getTipo()%>' disabled>
                     -->
-                    
+
                     <select name="tipo" id="tipo" disabled>
                         <option value="0"><%= user.getTipo()%></option>
                         <option value="1">Administrador</option>
@@ -207,6 +208,7 @@
         </form>
         <!--FORM-->
     </footer>
+
 </body>
 
 </html>

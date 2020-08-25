@@ -1,6 +1,6 @@
+window.location = "#carousel-1";
+
 function home() {
-    console.log("home");
-    alert("home");
     let btn = document.getElementById("form-main");
     btn.action = "ServAluno";
     btn.method = "POST";
@@ -9,8 +9,6 @@ function home() {
 }
 
 function profile() {
-    console.log("profile");
-    alert("profile");
     let btn = document.getElementById("form-main");
     btn.action = "ServAluno";
     btn.method = "POST";
