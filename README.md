@@ -5,8 +5,8 @@ Sistema escolar desenvolvido com java / hibernate utilizando padrão mvc :+1:
 
 ## :computer:Modelagem banco do dados com jpa/hibernate:computer:
 
-![]()
+![](https://github.com/DanielSBaumann/java-college/blob/master/WebContent/img/db.png)
 
 ## :unlock::key: Login senha
 
-![]()
+![](https://github.com/DanielSBaumann/java-college/blob/master/WebContent/img/login.gif)
