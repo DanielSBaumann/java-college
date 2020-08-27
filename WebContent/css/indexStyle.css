@@ -7,7 +7,7 @@
       body{
           font-family: sans-serif;
           display: grid;
-          grid-template-rows: 30vh auto auto 10vh;
+          grid-template-rows: 30vh auto auto auto;
           grid-template-columns: 1fr;
           grid-template-areas:"hd"
                                 "nv"
@@ -119,22 +119,43 @@
     font-size: 20px;
     color: white;
     text-align: center;
-    letter-spacing: 1px;
-    font-size: 16px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 .hamburg{
     transition: all 0.6s linear;
-    display: inline-block;
-    margin: 20px auto;
-    height: auto;
-    width: 100%;
+    margin: 10px auto;
+}
+.hamburg:hover .hamburg-inside{
+    display:block;
 }
 .hamburg-inside{
+    display: none;
     border-bottom: 1px solid white;
-    display: inline-block;
-    height: 60px;
-    width: 100%;
-    margin: 20px auto;
+    width: 348px;
+    margin: 10px auto;
+    transition: all 0.6s linear;
+}
+.hamburg-inside:hover{
+    background-color: rgb(24, 33, 49);
+}
+.hamburg-inside:hover .topic{
+    display: block;
+}
+.topic{
+    display: none;
+    background-color: rgb(41, 55, 80);
+    margin: 10px auto;
+    transition: all 0.6s linear;
+    height: auto;
+}
+.link{
+    transition: all 0.6s linear;
+    margin: 6px auto;
+}
+.link:hover{
+    background-color: rgb(50, 67, 95);
 }
 /*
 .box-nav ul{
@@ -214,7 +235,93 @@
         grid-area: sc;
         background-color: white
     }
+    .carousel-box{
+        width: 90%;
+        height: 400px;
+        margin: 10px auto 10px auto;
+        transition: all linear 0.3s;
+      }
+      .carousel-box p,a{
+          text-decoration: none;
+          color: white;
+      }
+      .carousel{
+          display: none;
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+      }
+      .carousel:target{
+          display: block;
+      }
+      .carousel-topic{
+          color: white;
+          text-align: center;
+          background-color: #ad9000;
+          height: 20%px;
+          font-size: 24px;
+          letter-spacing: 2px;
+          padding: auto;
+          border-radius: 12px 12px 0 0;
+          font-style: monospace;
+          text-shadow: 1px 1px 2px rgb(65, 63, 63);
+      }
+      .carousel li{
+          display: inline-block;
+          list-style: none;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-size: 12px;
+          border: solid 2px transparent;
+          text-shadow: 1px 1px 2px rgb(65, 63, 63);
+          border-radius: 12px;
+          transition: all linear 0.3s;
+          text-align: center;
+          width: 40%;
+          margin: 12px 0 6px 240px;
+      }
+      .carousel li:hover{
+          color: rgb(219, 191, 191);
+          border: solid 2px rgb(245, 238, 238);
+      }
+      
+      .carousel-1{
+          background-image: url(../img/student1.jpg), linear-gradient(0deg,#b07a00,#fed501);
+          background-repeat: no-repeat;
+          background-position: center bottom;
+      }
+      .carousel-2{
+        background-image: url(../img/student2.jpg), linear-gradient(0deg,#b07a00,#fed501);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    .carousel-3{
+        background-image: url(../img/student3.jpg), linear-gradient(0deg,#b07a00,#fed501);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+      .carousel-left{
+          display: inline-block;
+          margin: 16% 4px 10% 2px;
+          font-size: 26px;
+          border: 1px solid transparent;
+          text-shadow: 1px 1px 2px rgb(65, 63, 63);
+          transition: all linear 0.3s;
+      }
+      .carousel-right{
+        display: inline-block;
+        margin: 16% 2px 10% 86%;
+        font-size: 26px;
+        text-shadow: 1px 1px 2px rgb(65, 63, 63);
+        transition: all linear 0.3s;
+        border: 1px solid transparent;
+    }
+    .carousel-left:hover,.carousel-right:hover{
+        color: rgb(223, 210, 210);
+        border: 1px solid rgb(233, 225, 225);
+    }
   footer{
+        margin-top: 30px;
         grid-area: ft;
         background-color: rgb(31, 44, 70);
         text-align: center;
@@ -334,6 +441,74 @@
         border-radius: 10px;
         box-shadow: 3px 3px 5px rgb(41, 39, 39);
     }
+    .hamburg{
+        overflow: hidden;
+        color: transparent;
+    }
+    .box-nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    .box-nav a{
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+        width: 100%;
+        height: 40px;
+        letter-spacing: 2px;
+        font-size: 12px;
+        margin-top:10px;
+        padding: 0;
+    }
+    .hamburg-inside{
+        color: white;
+        text-align: center;
+        margin-top: 12px;
+        display: inline-block;
+        text-decoration: none;
+        background-color: rgb(25, 35, 53);
+        width: 100%;
+        height: 40px;
+        letter-spacing: 2px;
+        font-size: 12px;
+        text-transform: uppercase;
+        border: none;
+        border-bottom:solid 1px white;
+        transition: all 0.3s linear;
+    }
+    .hamburg-inside ul{
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s linear;
+    }
+    .hamburg-inside:hover{
+        color: rgb(189, 179, 179);
+        background-color: rgb(61, 73, 97);
+    }
+    .hamburg-inside:active{
+        color: rgb(133, 127, 127);
+        background-color: rgb(32, 34, 37);
+    }
+    .hamburg-inside:hover ul{
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        background-color: rgb(106, 111, 122);
+    }
+    .link{
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-size: 12px;
+        text-transform: uppercase;
+        list-style-type: none;
+        margin: 8px;
+        transition: all 0.3s linear;
+    }
+    .link:hover{
+        color: rgb(124, 77, 77);
+        background-color: rgb(31, 44, 70);
+    }
+    /*
     .box-nav ul{
         margin: 0;
         padding: 0;
@@ -397,6 +572,7 @@
         color: rgb(124, 77, 77);
         background-color: rgb(31, 44, 70);
     }
+    */
     section{
           grid-area: sc;
           background-color: white
@@ -448,7 +624,7 @@
       }
       .carousel li:hover{
           color: rgb(219, 191, 191);
-          border: solid 2px rgb(224, 217, 217);
+          border: solid 2px rgb(245, 238, 238);
       }
       .carousel-1{
           background-image: url(../img/student1.jpg), linear-gradient(0deg,#b07a00,#fed501);

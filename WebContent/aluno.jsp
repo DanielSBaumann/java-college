@@ -49,51 +49,56 @@
         <div class="box-nav">
 
             <ul>
-                <li class="topic">
-                    Academico
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Materiais
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Grade escolar
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Avaliacoes
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Financeiro
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                </li>
-            </ul>
+                <li class="hamburg"><i class="fa fa-bars">
 
+                    <ul>
+                        <li class="hamburg-inside">
+                            Academico
+                            <ul class="topic">
+                                <li class="link trn"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        <li class="hamburg-inside">
+                            Materiais
+                            <ul class="topic">
+                                <li class="link"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        <li class="hamburg-inside">
+                            Grade escolar
+                            <ul class="topic">
+                                <li class="link"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        <li class="hamburg-inside">
+                            Avaliacoes
+                            <ul class="topic">
+                                <li class="link"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        <li class="hamburg-inside">
+                            Financeiro
+                            <ul class="topic">
+                                <li class="link"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                </i></li>
+            </ul>
+        
         </div>
 
     </nav>
@@ -102,31 +107,52 @@
 
         <!-- Carrousel-->
 
-        <div class="carousel-item">
-            <img src="img/student1.jpg" alt="img1">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Imagem 1</h5>
-                <p>texto 1</p>
+        <div class="carousel-box">
+
+            <div class="carousel carousel-1" id="carousel-1">
+                <h5 class="carousel-topic">Exercicios e simulados</h5>
+                <ul>
+                    <li><a href="#">exercicios</a></li>
+                    <li><a href="#">simulados</a></li>
+                </ul>
+                <a href="#carousel-3" class="carousel-left">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#carousel-2" class="carousel-right">
+                    <i class="fa fa-angle-right"></i>
+                </a>
             </div>
+
+            <div class="carousel carousel-2" id="carousel-2">
+                <h5 class="carousel-topic">Boletim</h5>
+                <ul>
+                    <li><a href="#">bimestre atual</a></li>
+                    <li><a href="#">geral</a></li>
+                </ul>
+                <a href="#carousel-1" class="carousel-left">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#carousel-3" class="carousel-right">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+
+            <div class="carousel carousel-3" id="carousel-3">
+                <h5 class="carousel-topic">Quadro de horario</h5>
+                <ul>
+                    <li><a href="#">acessar meus horarios</a></li>
+                </ul>
+                <a href="#carousel-2" class="carousel-left">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#carousel-1" class="carousel-right">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+
         </div>
 
-        <div class="carousel-item">
-            <img src="img/student2.jpg" alt="img2">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Imagem 2</h5>
-                <p>texto 2</p>
-            </div>
-        </div>
-
-        <div class="carousel-item">
-            <img src="img/student3.jpg" alt="img3">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Imagem 3</h5>
-                <p>texto 3</p>
-            </div>
-        </div>
-
-        <!-- Carrousel-->
+           <!--Carrousel-->
 
     </section>
 
