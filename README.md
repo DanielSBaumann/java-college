@@ -3,7 +3,7 @@
 Sistema escolar desenvolvido com java / hibernate utilizando padrão mvc :+1:
   Projeto com padrão de telas responsivas :computer: desktop e :iphone: mobile .
 
-## :computer:Modelagem banco do dados com jpa/hibernate:computer:
+## :computer:Modelagem banco de dados com jpa/hibernate:computer:
 
 ![](https://github.com/DanielSBaumann/java-college/blob/master/WebContent/img/db.png)
 
