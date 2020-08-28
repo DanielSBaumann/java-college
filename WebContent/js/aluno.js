@@ -1,17 +1,5 @@
 window.location = "#carousel-1";
 
-/*
-$('.carousel-box a[href^="#"]').on('click', function(e) {
-	e.preventDefault();
-	var id = $(this).attr('href'),
-			targetOffset = $(id).offset().top;
-			
-	$('html, body').animate({ 
-		scrollTop: targetOffset - 100
-	}, 500);
-});
-*/
-
 function home() {
     let btn = document.getElementById("form-main");
     btn.action = "ServAluno";
@@ -33,6 +21,14 @@ function update() {
     btn.action = "ServAluno";
     btn.method = "POST";
     document.getElementById("action").value = "update";
+    btn.submit();
+}
+
+function del() {
+    let btn = document.getElementById("form-main");
+    btn.action = "ServAluno";
+    btn.method = "POST";
+    document.getElementById("action").value = "delete";
     btn.submit();
 }
 

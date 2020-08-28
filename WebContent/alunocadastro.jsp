@@ -49,51 +49,56 @@
         <div class="box-nav">
 
             <ul>
-                <li class="topic">
-                    Academico
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Materiais
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Grade escolar
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Avaliacoes
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Financeiro
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                </li>
-            </ul>
+                <li class="hamburg"><i class="fa fa-bars">
 
+                    <ul>
+                        <li class="hamburg-inside">
+                            Academico
+                            <ul class="topic">
+                                <li class="link trn"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        <li class="hamburg-inside">
+                            Materiais
+                            <ul class="topic">
+                                <li class="link"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        <li class="hamburg-inside">
+                            Grade escolar
+                            <ul class="topic">
+                                <li class="link"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        <li class="hamburg-inside">
+                            Avaliacoes
+                            <ul class="topic">
+                                <li class="link"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        <li class="hamburg-inside">
+                            Financeiro
+                            <ul class="topic">
+                                <li class="link"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                </i></li>
+            </ul>
+        
         </div>
 
     </nav>
@@ -187,9 +192,7 @@
 
                 <input onclick="update()" class="btn-cad" type="button" value="update">
 
-                <!--
-                <input class="btn-reset" type="reset" value="clear">
-                -->
+                <input onclick="del()" class="btn-reset" type="reset" value="deletar">
 
             </div>
 

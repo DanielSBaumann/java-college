@@ -56,6 +56,15 @@ public class Aluno extends Pessoa {
 		return (Aluno) new MAluno().user(id).get(0);
 	}
 
+	public boolean update(Aluno aluno, String nome, String cpf, String email, String login, String senha) {
+		aluno.setNome(nome);
+		aluno.setCpf(cpf);
+		aluno.setEmail(email);
+		aluno.setLogin(login);
+		aluno.setSenha(senha);
+		return new MAluno().update(aluno);
+	}
+
 	public Turma getTurma() {
 		return turma;
 	}

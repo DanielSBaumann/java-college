@@ -50,66 +50,56 @@
         <div class="box-nav">
 
             <ul>
-                <li class="topic">
-                    Admin
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Administrativo
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Funcionarios
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Avaliacoes
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Professor
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Aluno
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Responsavel
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-            </ul>
+                <li class="hamburg"><i class="fa fa-bars">
 
+                    <ul>
+                        <li class="hamburg-inside">
+                            Academico
+                            <ul class="topic">
+                                <li class="link trn"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        <li class="hamburg-inside">
+                            Materiais
+                            <ul class="topic">
+                                <li class="link"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        <li class="hamburg-inside">
+                            Grade escolar
+                            <ul class="topic">
+                                <li class="link"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        <li class="hamburg-inside">
+                            Avaliacoes
+                            <ul class="topic">
+                                <li class="link"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        <li class="hamburg-inside">
+                            Financeiro
+                            <ul class="topic">
+                                <li class="link"><a href="#">ABC</a></li>
+                                <li class="link"><a href="#">DEF</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                                <li class="link"><a href="#">GHI</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                </i></li>
+            </ul>
+        
         </div>
 
     </nav>

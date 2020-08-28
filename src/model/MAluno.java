@@ -82,5 +82,27 @@ public class MAluno {
 		return list;
 
 	}
+	
+	public boolean update(Aluno aluno) {
+		Session session;
+
+		try {
+
+			System.out.println("Model Aluno -> Update");
+
+			session = HibernateUtil.abrirSession();
+
+			session.saveOrUpdate(aluno);
+
+			session = HibernateUtil.fecharSession();
+
+			System.out.println("Cadastro alterado com sucesso!");
+
+			return true;
+		} catch (HibernateException e) {
+			System.out.println("Erro: " + e.toString());
+			return false;
+		}
+	}
 
 }
