@@ -52,6 +52,11 @@
   color: rgb(160, 156, 156);
   margin: 10px;
 }
+.erro-login{
+  color: red;
+  border: none;
+  font-size: 20px;
+}
 #title_login {
   margin: 10px 12px 16px 12px;
   text-align: center;
@@ -223,6 +228,15 @@
   width: 200px;
   height: 30px;
   border-radius: 20px;
+  text-align: center;
+}
+.erro-login{
+  color: red;
+  border: none;
+  font-size: 14px;
+  margin: 8px auto;
+  background-color: white;
+  width: 100%;
   text-align: center;
 }
     footer{

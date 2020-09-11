@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -61,7 +63,7 @@
                 </div>
 
                 <div class="center">
-                    <input class="erro-login" type="hidden" value="" disabled>
+                    <input class="erro-login" type="text" value='<%= request.getAttribute("erro")%>' disabled>
                 </div>
 
             </form>

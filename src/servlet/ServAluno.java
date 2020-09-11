@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
 import control.Aluno;
 import control.User;
 
@@ -23,7 +22,6 @@ public class ServAluno extends HttpServlet {
 		String action = request.getParameter("action");
 
 		switch (action) {
-
 		case "home": {
 			System.out.println("Case home");
 			request.getRequestDispatcher("aluno.jsp").forward(request, response);
@@ -72,7 +70,6 @@ public class ServAluno extends HttpServlet {
 
 			break;
 		}
-
 		}
 	}
 

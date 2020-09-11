@@ -51,54 +51,54 @@
             <ul>
                 <li class="hamburg"><i class="fa fa-bars">
 
-                    <ul>
-                        <li class="hamburg-inside">
-                            Academico
-                            <ul class="topic">
-                                <li class="link trn"><a href="#">ABC</a></li>
-                                <li class="link"><a href="#">DEF</a></li>
-                                <li class="link"><a href="#">GHI</a></li>
-                            </ul>
-                        </li>
-                        <li class="hamburg-inside">
-                            Materiais
-                            <ul class="topic">
-                                <li class="link"><a href="#">ABC</a></li>
-                                <li class="link"><a href="#">DEF</a></li>
-                                <li class="link"><a href="#">GHI</a></li>
-                            </ul>
-                        </li>
-                        <li class="hamburg-inside">
-                            Grade escolar
-                            <ul class="topic">
-                                <li class="link"><a href="#">ABC</a></li>
-                                <li class="link"><a href="#">DEF</a></li>
-                                <li class="link"><a href="#">GHI</a></li>
-                            </ul>
-                        </li>
-                        <li class="hamburg-inside">
-                            Avaliacoes
-                            <ul class="topic">
-                                <li class="link"><a href="#">ABC</a></li>
-                                <li class="link"><a href="#">DEF</a></li>
-                                <li class="link"><a href="#">GHI</a></li>
-                            </ul>
-                        </li>
-                        <li class="hamburg-inside">
-                            Financeiro
-                            <ul class="topic">
-                                <li class="link"><a href="#">ABC</a></li>
-                                <li class="link"><a href="#">DEF</a></li>
-                                <li class="link"><a href="#">GHI</a></li>
-                                <li class="link"><a href="#">GHI</a></li>
-                                <li class="link"><a href="#">GHI</a></li>
-                            </ul>
-                        </li>
-                        </li>
-                    </ul>
-                </i></li>
+                        <ul>
+                            <li class="hamburg-inside">
+                                Academico
+                                <ul class="topic">
+                                    <li class="link trn"><a href="#">ABC</a></li>
+                                    <li class="link"><a href="#">DEF</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                </ul>
+                            </li>
+                            <li class="hamburg-inside">
+                                Materiais
+                                <ul class="topic">
+                                    <li class="link"><a href="#">ABC</a></li>
+                                    <li class="link"><a href="#">DEF</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                </ul>
+                            </li>
+                            <li class="hamburg-inside">
+                                Grade escolar
+                                <ul class="topic">
+                                    <li class="link"><a href="#">ABC</a></li>
+                                    <li class="link"><a href="#">DEF</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                </ul>
+                            </li>
+                            <li class="hamburg-inside">
+                                Avaliacoes
+                                <ul class="topic">
+                                    <li class="link"><a href="#">ABC</a></li>
+                                    <li class="link"><a href="#">DEF</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                </ul>
+                            </li>
+                            <li class="hamburg-inside">
+                                Financeiro
+                                <ul class="topic">
+                                    <li class="link"><a href="#">ABC</a></li>
+                                    <li class="link"><a href="#">DEF</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                </ul>
+                            </li>
+                </li>
             </ul>
-        
+            </i></li>
+            </ul>
+
         </div>
 
     </nav>
@@ -139,17 +139,19 @@
                     <br>
 
                     <label for="nome">Nome</label>
-                    <input class="input-txt" type="text" id="nome" name="nome" value='<%= aluno.getNome()%>'>
+                    <input class="input-txt" type="text" id="nome" name="nome" value='<%= aluno.getNome()%>' disabled>
 
                     <br>
 
                     <label for="login">Login</label>
-                    <input class="input-txt" type="text" id="login" name="login" value='<%= aluno.getLogin()%>'>
+                    <input class="input-txt" type="text" id="login" name="login" value='<%= aluno.getLogin()%>'
+                        disabled>
 
                     <br>
 
                     <label for="senha">Senha</label>
-                    <input class="input-txt" type="password" id="senha" name="senha" value='<%= aluno.getSenha()%>'>
+                    <input class="input-txt" type="password" id="senha" name="senha" value='<%= aluno.getSenha()%>'
+                        disabled>
 
                 </fieldset>
 
@@ -162,27 +164,28 @@
                     <legend>Dados Pessoais</legend>
 
                     <label for="cpf">Cpf</label>
-                    <input class="input-txt" type="text" id="cpf" name="cpf" value='<%= aluno.getCpf()%>'>
+                    <input class="input-txt" type="text" id="cpf" name="cpf" value='<%= aluno.getCpf()%>' disabled>
 
                     <br>
 
                     <label for="tel">Telefone</label>
-                    <input class="input-txt" type="text" id="tel" name="tel" value='99999999'>
+                    <input class="input-txt" type="text" id="tel" name="tel" value='99999999' disabled>
 
                     <br>
 
                     <label for="endereco">Endereco</label>
-                    <input class="input-txt" type="text" id="endereco" name="endereco"
-                        value='<%= aluno.getEndereco()%>'>
+                    <input class="input-txt" type="text" id="endereco" name="endereco" value='<%= aluno.getEndereco()%>'
+                        disabled>
 
                     <br>
                     <label for="email">Email</label>
-                    <input class="input-txt" type="email" id="email" name="email" value='<%= aluno.getEmail()%>'>
+                    <input class="input-txt" type="email" id="email" name="email" value='<%= aluno.getEmail()%>'
+                        disabled>
 
                     <br>
 
                     <label for="niver">Data nascimento</label>
-                    <input type="date" id="niver" name="niver" required>
+                    <input type="date" id="niver" name="niver" disabled>
 
                 </fieldset>
 
@@ -192,8 +195,9 @@
 
                 <input onclick="update()" class="btn-cad" type="button" value="update">
 
+                <!--
                 <input onclick="del()" class="btn-reset" type="reset" value="deletar">
-
+                   -->
             </div>
 
         </div>

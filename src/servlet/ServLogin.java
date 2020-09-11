@@ -53,8 +53,8 @@ public class ServLogin extends HttpServlet {
 
 		} else {
 
-			System.out.println("Não foi possível efetuar o login!");
-			request.getRequestDispatcher("login.html").forward(request, response);
+			request.setAttribute("erro", "Login ou senha invalidos");
+			request.getRequestDispatcher("login.jsp").forward(request, response);
 
 		}
 
