@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/indexStyle.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/admin.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css" media="screen" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/admin.js"></script>
+
     <title>Colégio SB</title>
 </head>
 
@@ -15,16 +17,18 @@
         <div id="hd-logo">
             <div id="box-logo">
                 <img id="img-logo" src="img/image.png" alt="logo">
-                <p>Bem vindo Admin!</p>
+                <p>Bem vindo <%=session.getAttribute("user")%>!</p>
             </div>
 
             <!--FORM-->
             <form id="form-main">
+
+                <input type="hidden" id="action" name="action">
+
                 <!--FORM-->
 
         </div>
         <div id="hd-search">
-            <!--<form id="form-main">-->
             <div id="search">
                 <i class="fa fa-search" id="lupa"></i>
                 <input type="text" id="txt-search" placeholder="Pesquise aqui">
@@ -33,7 +37,6 @@
         <div id="hd-gif">
             <p><i class="fa fa-home"></i>Home |</p>
             <p><i class="fa fa-user-edit"></i>Meu Perfil |</p>
-            <p><i class="fa fa-book"></i>Inf. Academicas |</p>
             <p>Sair</p>
         </div>
     </header>
@@ -43,64 +46,54 @@
         <div class="box-nav">
 
             <ul>
-                <li class="topic">
-                    Admin
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
+                <li class="hamburg"><i class="fa fa-bars">
+
+                        <ul>
+                            <li class="hamburg-inside">
+                                Academico
+                                <ul class="topic">
+                                    <li class="link trn"><a href="#">ABC</a></li>
+                                    <li class="link"><a href="#">DEF</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                </ul>
+                            </li>
+                            <li class="hamburg-inside">
+                                Materiais
+                                <ul class="topic">
+                                    <li class="link"><a href="#">ABC</a></li>
+                                    <li class="link"><a href="#">DEF</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                </ul>
+                            </li>
+                            <li class="hamburg-inside">
+                                Grade escolar
+                                <ul class="topic">
+                                    <li class="link"><a href="#">ABC</a></li>
+                                    <li class="link"><a href="#">DEF</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                </ul>
+                            </li>
+                            <li class="hamburg-inside">
+                                Avaliacoes
+                                <ul class="topic">
+                                    <li class="link"><a href="#">ABC</a></li>
+                                    <li class="link"><a href="#">DEF</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                </ul>
+                            </li>
+                            <li class="hamburg-inside">
+                                Financeiro
+                                <ul class="topic">
+                                    <li class="link"><a href="#">ABC</a></li>
+                                    <li class="link"><a href="#">DEF</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                    <li class="link"><a href="#">GHI</a></li>
+                                </ul>
+                            </li>
                 </li>
-                <li class="topic">
-                    Administrativo
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Funcionarios
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Avaliacoes
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Professor
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Aluno
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
-                <li class="topic">
-                    Responsavel
-                    <ul>
-                        <li class="link"><a href="#">ABC</a></li>
-                        <li class="link"><a href="#">DEF</a></li>
-                        <li class="link"><a href="#">GHI</a></li>
-                    </ul>
-                </li>
+            </ul>
+            </i></li>
             </ul>
 
         </div>
@@ -109,88 +102,16 @@
 
     <section>
 
-        <div class="form-main">
+        <ul>
 
-            <div class="form-main-left">
+            <li>admin</li>
+            <li>administrativo</li>
+            <li>aluno</li>
+            <li>professor</li>
+            <li>funcionario</li>
+            <li>turma</li>
 
-                <fieldset>
-
-                    <legend>Cadastro de Usuario</legend>
-
-                    <label for="tipo">Categoria do Usuário</label>
-                    <select name="tipo" id="tipo">
-                        <option value="0">Selecione...</option>
-                        <option value="1">Administrador</option>
-                        <option value="2">Administrativo</option>
-                        <option value="3">Funcionario</option>
-                        <option value="4">Professor</option>
-                        <option value="5">Aluno</option>
-                        <option value="6">Responsavel</option>
-                    </select>
-
-                    <br>
-
-                    <label for="nome">Nome</label>
-                    <input class="input-txt" type="text" id="nome" name="nome" placeholder="digite nome" required>
-
-                    <br>
-
-                    <label for="login">Login</label>
-                    <input class="input-txt" type="text" id="login" name="login" placeholder="digite login" required>
-
-                    <br>
-                    
-                    <label for="senha">Senha</label>
-                    <input class="input-txt" type="password" id="senha" name="senha" placeholder="digite senha"
-                        required>
-
-                </fieldset>
-
-            </div>
-
-            <div class="form-main-right">
-
-                <fieldset>
-
-                    <legend>Dados Pessoais</legend>
-
-                    <label for="cpf">Cpf</label>
-                    <input class="input-txt" type="text" id="cpf" name="cpf" placeholder="digite cpf" required>
-
-                    <br>
-
-                    <label for="tel">Telefone</label>
-                    <input class="input-txt" type="text" id="tel" name="tel" placeholder="(21)99999-9999" required>
-
-                    <br>
-
-                    <label for="endereco">Endereco</label>
-                    <input class="input-txt" type="text" id="endereco" name="endereco"
-                        placeholder="Ex:Av. das Americas 5000" required>
-
-                    <br>
-                    <label for="email">Email</label>
-                    <input class="input-txt" type="email" id="email" name="email" placeholder="Ex:joao@mail.com"
-                        required>
-
-                    <br>
-
-                    <label for="niver">Data nascimento</label>
-                    <input type="date" id="niver" name="niver" required>
-
-                </fieldset>
-
-            </div>
-
-            <div class="form-main-bottom">
-
-                <input class="btn-cad" type="button" value="cadastrar">
-
-                <input class="btn-reset" type="reset" value="clear">
-
-            </div>
-
-        </div>
+        </ul>
 
     </section>
 
@@ -205,6 +126,7 @@
         </form>
         <!--FORM-->
     </footer>
+
 </body>
 
 </html>
