@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+      font-family: sans-serif;
+      display: grid;
+      grid-template-rows: 30vh auto auto auto;
+      grid-template-columns: 1fr;
+      grid-template-areas:"hd"
+                            "nv"
+                            "sc"
+                            "ft";
+  }
+ul,li{
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+  }
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+      grid-area: hd;
+      background-color: rgb(31, 44, 70);
+      display: grid;
+      grid-template-rows: 14% 86%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:"gf gf"
+                          "lg se";
+  }
+#hd-gif{
+    grid-area: gf;
+    background-color: rgb(31, 44, 70);
+    height: 30px;
+    width: 100%;
+    position:fixed;
+    text-align: center;
+}
+#hd-gif p{
+    padding: 6px 0;
+    color: white;
+    display: inline-block;
+    transition: linear .5s all;
+    font-size: 1.2em;
+}
+#hd-gif p:hover{
+    color: rgb(184, 176, 176);
+}
+#hd-logo{
+    grid-area: lg;
+    background-color: rgb(31, 44, 70);
+}
+#box-logo{
+    width: 90%;
+    height: 90%;
+    background-image: url(../img/image.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box-logo p{
+    display: inline-block;
+    margin: 10em 0 0 2.5em;
+    color: white;
+}
+#hd-search{
+    grid-area: se;
+    background-color: rgb(31, 44, 70);
+}
+#search{
+    margin: 80px auto;
+    width: 80%;
+    height: 30px;
+    border: solid black 1px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgb(22, 21, 21);
+}
+#txt-search{
+    border: none;
+    color: rgb(90, 87, 87);
+    margin-top: 10px;
+    width: 80%;
+}
+#lupa{
+    margin-left: 5px;
+    font-size: 20px;
+}
+nav{
+    grid-area: nv;
+}
+  section{
+    grid-area: sc;
+}
+.box-nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(16, 23, 37);
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    padding-top: 1em;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(1.000, 0.135, 0.240, 0.645);
+    transition-delay: 0.2s;
+    overflow: hidden;
+}
+.box-nav:hover{
+    height: 60vh;
+    background-color: rgb(31, 44, 70);
+}
+.topic{
+    width: 400px;
+    padding: 1em 0 2em;
+    background-color: rgb(44, 60, 94);
+    margin: 0 auto;
+    transition: all linear .5s;
+}
+.box-nav .topic:first-child{
+    margin-top: 1.5em;
+}
+.topic link:first-child{
+    margin-top: .8em;
+}
+.topic:hover .link{
+    display: block;
+    transition: linear .5s all;
+}
+.link{
+    background-color: rgb(16, 23, 37);
+    display: none;
+    margin: 0 auto;
+    padding-top: .5em;
+    width: 400px;
+    height: 2em;
+    transition: linear .5s all;
+}
+.link:hover{
+    background-color: rgb(36, 48, 75);
+    color: #ccc;
+}
+footer{
+    padding-top: 30px;
+    grid-area: ft;
+    background-color: rgb(31, 44, 70);
+    text-align: center;
+}
+footer p{
+  display: inline-block;
+  margin: 20px 0 0 20px;
+  padding-bottom: 1em;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+@media screen and (min-width: 720px) {
+    header{
+        grid-template-rows: 10% 90%;
+    }
+    #hd-gif{
+        padding-right: 1em;
+        text-align: right;
+    }
+    #box-logo{
+        width: 100%;
+        height: 100%;
+        background-position: left top;
+    }
+    #box-logo p{
+        display: inline-block;
+        margin: 11em 0 0 2em;
+        color: white;
+    }
+    .topic,.link{
+        width: 820px;
+    }
+}
+@media screen and (min-width: 1020px) {
+    body{
+        display: grid;
+        grid-template-rows: 30vh auto auto;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:"hd hd"
+                              "nv sc"
+                              "ft ft";
+    }
+    header{
+        grid-template-rows: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:"lg se gf";
+    }
+    nav{
+        height: 80vh;
+    }
+    #hd_gif{
+        text-align: center;
+        font-size: .9em;
+    }
+    #hd-gif p{
+        margin-right: 12px;
+    }
+    #box-logo p{
+        margin: 12.3em 0 0 3em;
+    }
+    #search{
+        margin: 120px auto;
+        width: 90%;
+    }
+    .box-nav,.topic,.link{
+        background-color: rgb(31, 44, 70);
+    }
+    .box-nav{
+        width: 60%;
+        height: 80vh;
+        transition: all linear .5s;
+    }
+    .box-nav:hover{
+        height: 80vh;
+        width: 100%;
+        background-color: rgb(42, 58, 90);
+    }
+    .box-nav:hover .topic,.box-nav:hover .link{
+        width: 380px;
+        background-color: rgb(42,58,90);
+    }
+    .box-nav .topic:first-child{
+        margin-top: 0;
+    }
+    .topic{
+        width: 220px;
+        padding: 1em 0;
+        margin: 0 auto;
+        border-bottom: solid 1px white;
+    }
+    .box-nav .topic:hover{
+        background-color: rgb(29, 41, 66);
+    }
+    .box-nav .topic:hover .link{
+        background-color: rgb(29, 41, 66);
+    }
+    .box-nav .topic:hover .link:hover{
+        background-color: rgb(17, 25, 41);
+    }
+    .link{
+        display: none;
+        width: 220px;
+    }
+    .vanish{
+        margin: 0;
+        padding: 0;
+        height: 1px;
+        width: 1px;
+        color: transparent;
+        display: none;
+    }
+}
