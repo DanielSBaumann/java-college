@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/mainAdmin.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/aluno.css" media="screen" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Colégio SB</title>
 </head>
@@ -76,50 +76,60 @@
     </nav>
 
     <section>
-        <div class="mobile">
-            <h2>Cadastro de novos usuarios</h2>
-            <ul>
-                <li><a href="#">Admin</a></li>
-                <li><a href="#">Administrativo</a></li>
-                <li><a href="#">Aluno</a></li>
-                <li><a href="#">Funcionário</a></li>
-                <li><a href="#">Professor</a></li>
-                <li><a href="#">Turmas</a></li>
 
-            </ul>
-        </div>
+        <div class="cadastro">
 
-        <div class="full-screen">
+            <fieldset>
 
-            <table>
-                <tr>
-                    <th colspan="3">Informações do sistema</th>
-                </tr>
-                <tr>
-                    <td>Nome diretor</td>
-                    <td colspan="2">Joaquim</td>
-                </tr>
-                <tr>
-                    <td>Numero de coordenadores</td>
-                    <td colspan="2">xxx</td>
-                </tr>
-                <tr>
-                    <td>Numero de professores</td>
-                    <td colspan="2">xxx</td>
-                </tr>
-                <tr>
-                    <td>Numero de turmas</td>
-                    <td colspan="2">xxx</td>
-                </tr>
-                <tr>
-                    <td>Numero de alunos</td>
-                    <td colspan="2">xxx</td>
-                </tr>
-                <tr>
-                    <td>Media geral</td>
-                    <td colspan="2">xxx</td>
-                </tr>
-            </table>
+                <legend>Cadastro do Aluno</legend>
+
+                <div class="adjust-label">
+                    <label for="nome">Nome</label>
+                    <input class="adjust-label-input" type="text" name="nome" value="João da Silva" disabled>
+                </div>
+
+                <div class="adjust-label">
+                    <label for="matricula">Matricula</label>
+                    <input class="adjust-label-input" type="text" name="matricula" value="123456" disabled>
+                </div>
+
+                <div class="adjust-label">
+                    <label for="cpf">CPF</label>
+                    <input class="adjust-label-input" type="text" name="cpf" value="2345678" disabled>
+                </div>
+
+                <div class="adjust-label">
+                    <label for="date">Data de nascimento</label>
+                    <input class="adjust-label-input" type="text" name="date" value="04/04/2004" disabled>
+                </div>
+
+                <div class="adjust-label">
+                    <label for="email">Email</label>
+                    <input class="adjust-label-input" type="text" name="emkail" value="João da Silva" disabled>
+                </div>
+
+                <div class="adjust-label">
+                    <label for="turma">Turma</label>
+                    <input class="adjust-label-input" type="text" name="turma" value="302" disabled>
+                </div>
+
+                <div class="adjust-label">
+                    <label for="rf">Possui resp. financeiro?</label>
+                    <input class="adjust-label-input" type="text" name="rf" value="sim" disabled>
+                </div>
+
+                <div class="adjust-label">
+                    <label for="responsavel">Responsavel</label>
+                    <input class="adjust-label-input" type="text" name="responsavel" value="José da Silva" disabled>
+                </div>
+
+                <div class="adjust-label">
+                    <label for="endereco">Endereço</label>
+                    <input class="adjust-label-input" type="text" name="endereco" value="Av. das Américas 6101"
+                        disabled>
+                </div>
+
+            </fieldset>
 
         </div>
 

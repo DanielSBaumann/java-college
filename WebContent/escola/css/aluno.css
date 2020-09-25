@@ -1,0 +1,117 @@
+@keyframes slide{
+    0%,31%,100%{
+        transform: translateY(0);
+    }
+    32%,62%{
+        transform: translateY(-55vh);
+    }
+    63%,99%{
+        transform: translateY(-110vh);
+    }
+}
+#slide{
+    width: 96.5vw;
+    height: 55vh;
+    overflow: hidden;
+}
+.slide-in {
+    width: 100%;
+    height: 100%;
+    animation: slide 12s infinite cubic-bezier(.82,.29,1,0.04);
+}
+.slide-1{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/student1.jpg);
+    background-repeat: no-repeat;
+    background-position: right center; 
+}
+.slide-2{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/student2.jpg);
+    background-repeat: no-repeat;
+    background-position: right center; 
+}
+.slide-3{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/student3.jpg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: cover; 
+}
+.cadastro{
+    height: 64vh;
+    width: 100%;
+}
+.cadastro fieldset{
+    height: 96%;
+    width: 96%;
+    margin: 6px auto;
+}
+.adjust-label{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 2em;
+    margin: 1em .3em;
+}
+.adjust-label-input{
+    border-radius: .7em;
+    border: none;
+    padding: .2em .5em;
+}
+@media screen and (min-width: 720px) {
+    @keyframes slide2{
+        0%,31%,100%{
+            transform: translateY(0);
+        }
+        32%,62%{
+            transform: translateY(-76vh);
+        }
+        63%,99%{
+            transform: translateY(-152vh);
+        }
+    }
+    #slide{
+        margin: 2vh auto;
+        width: 90%;
+        height: 76vh;
+        overflow: hidden;
+        background-color: lightcyan;
+        border-radius: 1em;
+    }
+    .slide-in {
+        width: 100%;
+        height: 100%;
+        animation: slide2 12s infinite cubic-bezier(.82,.29,1,0.04);
+    }
+    .slide-1{
+        background-image: url(../img/aluno1.jpg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: cover; 
+    }
+    .slide-2{
+        background-image: url(../img/aluno2.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: right center; 
+    }
+    .slide-3{
+        background-image: url(../img/aluno3.jpg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: cover; 
+    }
+}
+@media screen and (min-width: 1020px) {
+    .cadastro{
+        height: 76vh;
+        width: 100%;
+    }
+    .cadastro fieldset{
+        width: 90%;
+        margin: 2em auto;
+    }
+}
