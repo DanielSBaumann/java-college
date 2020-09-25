@@ -9,4 +9,4 @@ Sistema escolar desenvolvido com java / hibernate utilizando padrão mvc :+1:
 
 ## :unlock::key: Login senha
 
-![](https://github.com/DanielSBaumann/java-college/blob/master/WebContent/img/login.gif)
+![](https://github.com/DanielSBaumann/java-college/blob/master/WebContent/img/homework.gif)
