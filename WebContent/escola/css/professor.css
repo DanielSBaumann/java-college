@@ -1,0 +1,60 @@
+section{
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(245, 236, 236);
+    overflow: auto;
+}
+section table{
+    font-size: 1.2em;
+    background-color: white;
+    border: solid 2px black;
+    margin: 2vh auto;
+    height: 56vh;
+    width: 96%;
+    color: black;
+    border-radius: 20px;
+}
+section table thead{
+    height: 26vh;
+    width: 100%;
+}
+section table tbody{
+    height: 30vh;
+    width: 100%;
+}
+section table tbody tr:nth-child(odd){
+    background: #CCC
+}
+section table tbody tr:nth-child(even){
+    background: #fff
+}
+/*
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+*/
+section table tbody tr td{
+    text-align: center;
+}
+.img-table{
+    height: 20vh;
+    width: 100%;
+    background-image: url(../img/turmas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22vh;
+}
+@media screen and (min-width: 1020px) {
+    section{
+        background: white;
+        height: 80vh;
+        width: 100%;
+        background-color: white;
+        overflow: auto;
+    }
+    section table{
+        width: 90%;
+        margin: 6vh auto;
+        height: 68vh;
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+
+    <script>
+        /*
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide();
+                console.log("função");
+            });
+        });
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(this).hide();
+                console.log("função");
+            });
+        });
+        */
+        /*
+        $(document).ready(function () {
+            $("#change").click(function () {
+                $("#change").css({
+                    "background-color":"blue",
+                    "color":"white",
+                    "border":"none",
+                    "height":"80px",
+                    "width":"120px"
+                    });
+                console.log("trocando cor");
+            });
+        });
+        */
+        /*
+        function clickar() {
+
+            let aux = $("#change").css("background-color");
+            console.log(aux);
+
+            if (aux == "rgb(0, 0, 255)") {
+                $("#change").css("background-color", "red");
+            } else {
+                $("#change").css("background-color", "blue");
+            }
+
+        }
+
+        function clickar2(val) {
+            console.log(val);
+            let aux2 = val.style.backgroundColor;
+            //let aux = val.style.background-color;
+            console.log(aux2);
+
+            if (aux2 == "rgb(0, 0, 255)" || aux2 == "blue") {
+                //$("#change").css("background-color", "red");
+                val.style.backgroundColor = "red";
+            } else {
+                //$("#change").css("background-color", "blue");
+                val.style.backgroundColor = "blue";
+            }
+
+        }
+        */
+    </script>
+
+    <style>
+    </style>
+
+    <title>JQuery</title>
+</head>
+
+<body>
+
+    <h1>Testando jquery</h1>
+
+    <!--
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum."</p>
+
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum."</p>
+
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum."</p>
+        -->
+    <button onclick="clickar2(this)">Click</button>
+
+    <button>sair</button>
+
+    <button id="change" onclick="clickar()">trocar cor</button>
+
+    <script>
+
+        let aux = 0;
+        
+        $('h1')
+            .hover(function () {
+                if (aux == 0) {
+                    $("h1").css("color", "blue");
+                    aux++;
+                } else {
+                    $("h1").css("color", "black");
+                    aux = 0;
+                }})
+            .click(function () {
+                    if (aux == 0) {
+                        $("h1").css("color", "orange");
+                        aux++;
+                    } else {
+                        $("h1").css("color", "black");
+                        aux = 0;
+                    }
+                });
+    </script>
+</body>
+
+</html>

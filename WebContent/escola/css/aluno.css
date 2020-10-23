@@ -1,3 +1,4 @@
+/*
 @keyframes slide{
     0%,31%,100%{
         transform: translateY(0);
@@ -61,57 +62,234 @@
     border: none;
     padding: .2em .5em;
 }
+*/
+section{
+    height: 60vh;
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+}
+.form-set{
+    height: 56vh;
+    width: 96%;
+    background-color: white;
+    margin: 2vh auto;
+}
+.form-set fieldset{
+    margin: .8em;
+}
+.form-set-1{
+    height: 22vh;
+}
+.form-set-1 fieldset{
+    height: 22vh;
+}
+.form-set-1 div{
+    margin: .7em .3em .7em 0;
+}
+.input-txt{
+    height: 1.5em;
+    border-radius: 12px;
+    border: solid 1px transparent;
+    width: 70%;
+    text-align: center;
+    background: rgb(230, 220, 220);
+}
+.input-txt:focus{
+    border: solid 1px black;
+    background: #ccc;
+}
+.form-set-2{
+    height: 26vh;
+}
+.form-set-2 fieldset{
+    height: 26vh;
+}
+.form-set-2 div{
+    margin: .7em .3em .7em 0;
+}
+.form-set-btn{
+    margin: 2vh 5vh;
+}
+.form-btn{
+    width: 6em;
+    height: 2em;
+    border-radius: .5em;
+    border: solid 2px rgb(31, 44, 70);
+    color:rgb(31, 44, 70);
+    background-color: white;
+    box-shadow: 3px 3px 5px rgb(117, 111, 111);
+    transition: all linear .5s;
+}
+.form-btn:last-child{
+    border: solid 2px red;
+    background-color: red;
+    color: white;
+}
+.form-btn:last-child:hover{
+    background-color: white;
+    color: red;
+}
+.form-btn:hover{
+    background-color:  rgb(31, 44, 70);
+    color: white;
+}
+.input-txt2{
+    height: 1.5em;
+    border-radius: 12px;
+    border: solid 1px transparent;
+    width: 32%;
+    text-align: center;
+    background: rgb(230, 220, 220);
+}
+section h2{
+    color: white;
+    text-align: center;
+    margin: 2vh auto;
+}
+section table{
+    font-size: .73em;
+    background-color: #4269e6;
+    border: solid 2px black;
+    margin: 2vh auto;
+    height: 50vh;
+    width: 96%;
+    border-collapse: collapse;
+    color: white;
+}
+.hour{
+    text-align: center;
+}
+.time-1{
+    color: white;
+    background-color: #4275a5;
+    text-align: center;
+}
+.time-2{
+    background-color: #eff3ff;
+    color: rgb(110, 104, 104);
+    text-align: center;
+}
+.resp{
+    display: none;
+}
 @media screen and (min-width: 720px) {
-    @keyframes slide2{
-        0%,31%,100%{
-            transform: translateY(0);
-        }
-        32%,62%{
-            transform: translateY(-76vh);
-        }
-        63%,99%{
-            transform: translateY(-152vh);
-        }
-    }
-    #slide{
+    
+    .form-set{
+        height: 56vh;
+        width: 80%;
+        background-color: white;
         margin: 2vh auto;
-        width: 90%;
-        height: 76vh;
-        overflow: hidden;
-        background-color: lightcyan;
-        border-radius: 1em;
     }
-    .slide-in {
-        width: 100%;
-        height: 100%;
-        animation: slide2 12s infinite cubic-bezier(.82,.29,1,0.04);
+    .input-txt{
+        height: 1.5em;
+        border-radius: 12px;
+        border: solid 1px transparent;
+        width: 86%;
+        text-align: center;
+        background: rgb(230, 220, 220);
     }
-    .slide-1{
-        background-image: url(../img/aluno1.jpg);
-        background-repeat: no-repeat;
-        background-position: right center;
-        background-size: cover; 
+    .form-set-btn{
+        margin: 2vh 10vh;
     }
-    .slide-2{
-        background-image: url(../img/aluno2.jpg);
-        background-size: cover; 
-        background-repeat: no-repeat;
-        background-position: right center; 
-    }
-    .slide-3{
-        background-image: url(../img/aluno3.jpg);
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: cover; 
+    .form-btn{
+        width: 10em;
+        height: 3em;
+        border-radius: .8em;
     }
 }
 @media screen and (min-width: 1020px) {
-    .cadastro{
-        height: 76vh;
+    section{
+        height: 80vh;
         width: 100%;
+        background-color: white;
+        overflow: auto;
     }
-    .cadastro fieldset{
+
+    /*formulario cadastro*/
+    .form-set{
+        height: 72vh;
+        width: 82%;
+        background-color: white;
+        margin: 4vh auto;
+        font-size: 1em;
+    }
+    .form-set fieldset{
+        margin: .8em;
+    }
+    .form-set-1{
+        height: 28vh;
+    }
+    .form-set-1 fieldset{
+        height: 28vh;
+    }
+    .form-set-1 div{
+        margin: .7em .3em .7em 0;
+    }
+    .input-txt{
+        height: 2.6em;
+        border-radius: 12px;
+        border: solid 1px transparent;
+        width: 86%;
+        text-align: center;
+        background: rgb(230, 220, 220);
+    }
+    .input-txt:focus{
+        border: solid 1px black;
+        background: #ccc;
+    }
+    .form-set-2{
+        height: 36vh;
+    }
+    .form-set-2 fieldset{
+        height: 36vh;
+    }
+    .form-set-2 div{
+        margin: .7em .3em .7em 0;
+    }
+    .form-set-btn{
+        margin: 1vh 22vh;
+    }
+    .form-btn{
+        width: 10em;
+        height: 4em;
+        border-radius: 1.2em;
+        border: solid 2px rgb(31, 44, 70);
+        color:rgb(31, 44, 70);
+        background-color: white;
+        box-shadow: 3px 3px 5px rgb(117, 111, 111);
+        transition: all linear .5s;
+    }
+    .input-txt2{
+        height: 2.6em;
+        border-radius: 12px;
+        border: solid 1px transparent;
+        width: 36%;
+        text-align: center;
+        background: rgb(230, 220, 220);
+    }
+    /*formulario cadastro*/
+
+    section h2{
+        color: white;
+        text-align: center;
+        margin: 8vh auto 4vh;
+        width: 600px;
+        height: 42px;
+        padding-top: 12px;
+        background-color: rgb(31, 44, 70);
+        border-radius: 20px;
+        box-shadow: 10px 10px 13px -9px rgba(0,0,0,0.75);
+    }
+    section table{
+        font-size: 1.3em;
+        background-color: rgb(31, 44, 70);
+        border: solid 2px black;
+        margin: 0 auto 2vh;
+        height: 58vh;
         width: 90%;
-        margin: 2em auto;
+        border-collapse: collapse;
+        color: white;
+        box-shadow: 10px 10px 13px -9px rgba(0,0,0,0.75);
     }
 }
